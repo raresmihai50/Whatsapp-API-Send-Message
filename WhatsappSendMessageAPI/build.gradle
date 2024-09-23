@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.1.0'  // Adaugă Spring Boot plugin
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Spring Boot starter pentru aplicații web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Twilio SDK
+    implementation group: 'com.twilio.sdk', name: 'twilio', version: '10.5.1'
+
+    // Logging (Logback)
+    implementation 'ch.qos.logback:logback-classic:1.4.8'
+
+    // Teste
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

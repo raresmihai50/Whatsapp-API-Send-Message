@@ -1,0 +1,26 @@
+body {
+    height: 100%;
+    text-align: center;
+    padding-top: 750px;
+    background-image: url("download.png");
+    background-size: cover; /* Acoperă întreaga zonă a ecranului */
+    background-repeat: no-repeat; /* Nu repetă imaginea */
+    background-position: center; /* Centrează imaginea */
+}
+#send:hover{
+        background-color: aqua;
+}
+#send{
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -420px;
+    margin-left: -55px;
+}
